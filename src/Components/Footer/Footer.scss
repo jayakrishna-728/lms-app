@@ -1,0 +1,30 @@
+.footer{
+    background: black;
+    display: flex;
+    padding: 0% 20%;
+    justify-content: center;
+    align-items: center;
+    &__flex{
+        padding: 50px 0px;
+        flex: 1;
+        &__title{
+            color: white;
+            font-size: 24px;
+            font-weight: 700;
+            padding:20px 0px;
+            text-align: start;
+        }
+        &__description{
+            font-size: 14px;
+            width: 300px;
+            font-weight: 500;
+            color: white;
+            text-align: start;
+            letter-spacing: 1px;
+        }
+        &__address{
+            font-size: 18px;
+            text-align: start;
+        }
+    }
+}

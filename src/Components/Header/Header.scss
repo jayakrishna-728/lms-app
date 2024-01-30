@@ -6,12 +6,15 @@
         justify-content: space-between;
         padding: 0% 20%;
         border-bottom: 3px solid #f1f1f1;
-        background: #fffaf1;
+        // background: #fffaf1;
+        // background: linear-gradient(#09203F,#537895);
+        // linear-gradient(#7abae5, #1885f1)
         &__reachinfo{
             display: flex;
             flex: 1;
             border-right: 2px solid #f1f1f1;
             padding: 2% 0;
+            // color: white;
             &__text{
                 color: #0b0c26;
                 font-size: 15px;
@@ -22,7 +25,7 @@
             &__email{
                 padding-left: 7px;
                 font-size: 20px;
-                color: #ffb500;
+                color: white;
                 text-align: start;
             }
             &__img{
@@ -34,6 +37,7 @@
             flex: 1;
             border-right: 2px solid #f1f1f1;
             padding: 2% 0;
+            color: white;
             &__text{
                 font-size: 24px;
                 font-weight: 700;
@@ -43,7 +47,7 @@
             &__description{
                 font-size: 18px;
                 font-size: 600;
-                color: #ffb500;
+                // color: #ffb500;
             }
         }
         &__callback{
@@ -57,12 +61,13 @@
                 font-weight: 500;
                 letter-spacing: 1px;
                 padding-bottom: 5px;
+                color: black;
             }
             &__link{
                 font-size: 22px;
                 font-weight: 400;
                 cursor: pointer;
-                color: #ffb500;
+                color: white;
             }
             &__img{
                 padding-top: 7px;
@@ -71,3 +76,28 @@
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .container {
+        .header{
+            width: 100%;
+            padding: 0 0;
+            border-bottom: 1px solid white;
+            &__reachinfo{
+                display: none;
+            }
+            &__companyname{
+                border-right: 0px solid transparent;
+                &__text{
+                    font-size: 18px;
+                }
+                &__description{
+                    font-size: 12px;
+                }
+            }
+            &__callback{
+                display: none;
+            }
+        }
+    }
+  }

@@ -11,7 +11,7 @@ export class Course extends Component{
 
                     </div>
                     <div className="course__container__sub">
-                        
+
                     </div>
                     <div className="course__container__sub">
 
@@ -26,9 +26,4 @@ export class Course extends Component{
             </div>
         )
     }
-}
-
-
-function add() {
-    throw new Error("Function not implemented.");
 }
