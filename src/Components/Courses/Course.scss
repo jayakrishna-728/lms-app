@@ -1,0 +1,35 @@
+.course{
+    padding-top: 20px;
+    background: #fffaf1;
+    &__header{
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        div{
+            height: 4px;
+            width: 35px;
+            position: absolute;
+            bottom: -4px;
+            background-color: #f9a156;
+        }
+    }
+    &__container{
+        padding: 0px 20%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &__sub{
+            flex: 1;
+            color: black;
+            height: 300px;
+            min-width: 300px;
+            margin: 20px 20px;
+            background-color: #f5e9d4;
+        }
+
+    }
+}
