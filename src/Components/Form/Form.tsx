@@ -35,7 +35,6 @@ const Form = () => {
         errorMessage = isValid ? '' : 'please enter a valid email address';
         break;
       default:
-        break;
     }
 
     setFormErrors((prevErrors) => ({
@@ -117,7 +116,7 @@ const Form = () => {
             <div className="error">{formErrors.name}</div>
       </div>
       <div className="form-group">
-        <input             type="email"
+        <input type="email"
                 name="email"
                 value={formData.email}
                       onChange={handleChange}
@@ -135,13 +134,9 @@ const Form = () => {
           <div className="error">{formErrors.number}</div>
         </div>
         <div className="form-group">
-          <input   type="text"
-                  name="number"
-                  value={formData.description}
-                  onChange={handleChange}
-                  required placeholder=" "  />
-          <label >Which course are you interested in ? (optional)</label>
-        </div>
+                <input type="text" placeholder=" " id="description" />
+                <label >Course interested in ?</label>
+      </div>
         <button className="submit-button" type="submit" onSubmit={handleSubmit}>Submit</button>
       </div>
     </div>

@@ -43,6 +43,12 @@
                 font-weight: 700;
                 padding-bottom: 5px;
                 letter-spacing: 1px;
+                &:hover{
+                    color: #f9a156;
+                    transform: scale(1);
+                    transition: all .4s ease-in;
+                    cursor: pointer;
+                }
             }
             &__description{
                 font-size: 18px;
@@ -68,11 +74,17 @@
                 font-weight: 400;
                 cursor: pointer;
                 color: white;
+                &:hover{
+                    color: #f9a156;
+                    transform: scale(1.5);
+                    transition: all .3s ease-in;
+                }
             }
             &__img{
                 padding-top: 7px;
                 transform: scaleX(-1);
             }
+           
         }
     }
 }

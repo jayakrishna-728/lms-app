@@ -9,6 +9,12 @@
         font-size: 20px;
         font-weight: 700;
         cursor: pointer;
+        &:hover{
+            color: #f9a156;
+            transform: scale(1.5);
+            transition: all .2s ease-in;
+        }
+    
     }
     .active{
         color: black;
